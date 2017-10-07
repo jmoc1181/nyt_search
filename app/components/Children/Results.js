@@ -13,11 +13,11 @@ var Results = React.createClass({
 		}
 	},
 
-	// When a user clicks save article
+	// clicks save article
 	clickToSave: function(result){
 
 		this.props.saveArticle(result.headline.main, result.pub_date, result.web_url);
-
+		
 	},
 
 	componentWillReceiveProps: function(nextProps){
@@ -29,8 +29,8 @@ var Results = React.createClass({
 
 		this.setState({results: myResults});
 	},
+
 	
-	// Here we render the function
 	render: function(){
 		return(
 
